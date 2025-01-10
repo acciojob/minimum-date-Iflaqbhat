@@ -40,13 +40,12 @@ function minDate(dates) {
     let min = dates[0]; // Start with the first date as the minimum
 
     for (let i = 1; i < dates.length; i++) {
-        // If the current date is earlier than the minimum date, update min
         if (dates[i] < min) {
             min = dates[i];
         }
     }
 
-    return min; // After the loop, min holds the earliest date
+    return min; 
 }
 
 alert(minDate(dates));
